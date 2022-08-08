@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Nova+Mono&display=swap"
+        rel="stylesheet">
+    <title>Datos EMT</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="titulo">
+            <img src="img/EMT_Madrid_Logo.png" alt="">
+            <h3>Datos EMT</h3>
+        </div>
+        <nav>
+
+            <div class="nav__sup">
+
+                <div class="div__nav-sup">
+                    <label>Year</label>
+                    <input class="txt" type="number" name="txt_year" min="2020" max="2050" id="txt_year" />
+                </div>
+
+                <div class="div__nav-sup">
+                    <label for="cbo_grupo">Grupo</label>
+                    <select name="cbo_grupo" id="select_grupo">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="div__nav-sup">
+                    <label for="cbo_subgrupo">Subgrupo</label>
+                    <select name="cbo_subgrupo" id="select_subgrupo">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                    </select>
+                </div>
+
+                <div class="div__nav-sup">
+                    <button class="btn" type="submit" name="btn" id="btn">Buscar</button>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="datos">
+            <h4 class="div-datos libres">Libre</h4>
+            <h4 class="div-datos sub">Subgrupo</h4>
+            <h4 class="div-datos sub1">Grupo(A/C/E/G)</h4>
+            <h4 class="div-datos sub2">Grupo(B/D/F/H)</h4>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <nav>
+                <div class="nav-left">
+                    <a class="link" href="#">CALENDARIO</a>
+                    <a class="link" href="#">VACACIONES</a>
+                    <a class="link" href="#">LIBRES</a>
+                </div>
+            </nav>
+
+            <div class="container-tabla" id="container-tabla"></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <h4>Copyright &COPY; wanyos.com</h4>
+    </footer>
+
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>
